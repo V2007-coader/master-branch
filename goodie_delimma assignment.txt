@@ -1,0 +1,18 @@
+from itertools import combinations
+sample_ip={'Fitbit Plus': 7980,'IPods': 22349,'MI Band': 999,'Cult Pass': 2799,'Macbook Pro': 229900,'Digital Camera': 11101,'Alexa': 9999,'Sandwich Toaster': 2195,'Microwave Oven': 9800,'Scale': 4999}
+m=int(input("number of employee"))
+if len(sample_ip)>m:
+   com=min(combinations(sample_ip,m))
+new_com={}
+for i in com:
+    new_com.setdefault(i)
+
+'''def sample_ip(val):
+    for key, value in new_com.items():
+        if val==value:
+    print(return key)'''
+'''key_max=max(com.key())
+key_min=min(com.key())
+res=key_max-key_min
+print("Here the goodies that are selected for distribution are:"+com.val+":"+com.key)'''
+print(new_com)
